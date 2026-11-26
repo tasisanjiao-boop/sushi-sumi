@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鮨 澄 - SUMI | 福岡・西中洲</title>
+    <link rel="stylesheet" href="style.css">
+<meta name="description" content="福岡・西中洲の鮨 澄。九州の旬の魚介を使ったおまかせコースをご紹介する架空店舗のデモサイトです。">
+<meta name="theme-color" content="#0c0c0c">
+<meta property="og:title" content="鮨 澄 - SUMI">
+<meta property="og:description" content="九州の旬を、一貫に。">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">鮨 澄 <small>SUMI</small></a>
+        <nav>
+            <a href="#concept">こだわり</a>
+            <a href="#menu">お品書き</a>
+            <a href="#access">店舗情報</a>
+            <a href="#reservation" class="reserve">ご予約</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <p class="subtitle">FUKUOKA · NISHINAKASU</p>
+            <h1>九州の旬を、<br>一貫に。</h1>
+            <p>四季折々の恵みと、職人の技。<br>心ほどける、至福のひとときを。</p>
+            <a href="#reservation" class="button">ご予約はこちら</a>
+        </div>
+    </section>
+
+<section id="concept" class="section">
+    <img src="images/chef.png" alt="寿司職人の手仕事">
+
+    <div>
+        <p class="subtitle">OUR PHILOSOPHY</p>
+        <h2>一貫に込める、想い。</h2>
+        <p>
+            九州の豊かな海から届く、選りすぐりの魚介。<br><br>
+            素材を見極め、丁寧に仕込み、<br>
+            その日の最良の一貫へ。<br><br>
+            季節とともに移ろう、<br>
+            鮨の妙をお楽しみください。
+        </p>
+    </div>
+</section>
+
+   
+
+   
+<section id="menu" class="section">
+    <p class="subtitle">OMAKASE</p>
+    <h2>お品書き</h2>
+    <p>季節を味わう、二つのおまかせ。</p>
+
+    <div class="menu-grid">
+
+        <div class="menu-card">
+            <img src="images/lunch.png" alt="昼のおまかせ">
+            <div class="menu-detail">
+                <p class="subtitle">LUNCH</p>
+                <h3>昼のおまかせ</h3>
+                <p class="price">¥8,800</p>
+                <p>季節の一品・握り・椀物・甘味</p>
+            </div>
+        </div>
+
+        <div class="menu-card">
+            <img src="images/dinner.png" alt="夜のおまかせ">
+            <div class="menu-detail">
+                <p class="subtitle">DINNER</p>
+                <h3>夜のおまかせ</h3>
+                <p class="price">¥16,500</p>
+                <p>旬の肴・特選握り・椀物・甘味</p>
+            </div>
+        </div>
+
+    </div>
+
+    <p class="menu-note">
+        ※料理写真はイメージです。
+    </p>
+</section>
+
+
+    <section id="access" class="section">
+        <p class="subtitle">INFORMATION</p>
+        <h2>店舗情報</h2>
+        <p>福岡県福岡市中央区西中洲</p>
+        <p>カウンター8席・完全予約制</p>
+        <p>昼 12:00 - 14:30</p>
+        <p>夜 18:00 - 22:00</p>
+    </section>
+
+   
+<section id="reservation" class="section">
+    <p class="subtitle">RESERVATION</p>
+    <h2>ご予約</h2>
+    <p>特別なひとときを、鮨 澄で。</p>
+
+    <form id="booking-form">
+
+        <label for="date">ご希望日</label>
+        <input type="date" id="date" required>
+
+        <label for="people">ご人数</label>
+        <select id="people" required>
+            <option>1名様</option>
+            <option selected>2名様</option>
+            <option>3名様</option>
+            <option>4名様</option>
+            <option>5名様</option>
+            <option>6名様</option>
+            <option>7名様</option>
+            <option>8名様</option>
+        </select>
+
+        <label for="course">ご希望のコース</label>
+        <select id="course" required>
+            <option>昼のおまかせ ¥8,800</option>
+            <option>夜のおまかせ ¥16,500</option>
+        </select>
+
+        <label for="name">お名前</label>
+        <input type="text" id="name"
+               placeholder="山田 太郎" required>
+
+        <button type="submit" class="button">
+            予約内容を確認する
+        </button>
+
+        <p id="booking-result" role="status"></p>
+
+    </form>
+
+    <p class="menu-note">
+        ※架空店舗のデモサイトです。
+        実際の予約は行われません。
+    </p>
+</section>
+
+
+    <footer>
+        <h2>鮨 澄</h2>
+        <p>© 2026 SUSHI SUMI</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
